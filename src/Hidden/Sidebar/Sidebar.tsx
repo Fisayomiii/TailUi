@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Header from '../../../components/Header/Header';
+// import Header from '../../../components/Header/Header';
 import Main from "../Main/Main";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const sidebarcomponentnavigation = [
     { name: "Alerts", href: "/" },
-    { name: "Button", href: "/" },
+    { name: "Button", href: "/templates/buttons" },
 ];
 
 function Sidebar() {
@@ -14,7 +14,7 @@ function Sidebar() {
 
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div>
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
                     <button type="button" className="block lg:hidden absolute top-20 left-5 w-8 h-11 flex items-center justify-center text-slate-900 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300" onClick={() => setMobileMenuOpen(true)}>
@@ -49,11 +49,11 @@ function Sidebar() {
                     </div>
 
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                        <Dialog.Panel className="fixed inset-0 z-20 overflow-y-auto bg-transparent backdrop-blur px-6 py-6 lg:hidden ">
+                        <Dialog.Panel className="fixed inset-0 z-20 overflow-y-auto bg-transparent backdrop-blur px-6 py-6 lg:hidden">
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-5 py-">
-                                        <div className="relative top-[-1.8125rem] left-[-1.8125rem] bg-white w-80 max-w-[calc(100%-3rem)] p-6 dark:bg-slate-800">
+                                        <div className="relative top-[-1.8125rem] left-[-1.8125rem] bg-white shadow-lg w-80 max-w-[calc(100%-3rem)] p-6 dark:bg-slate-800">
                                             <button type="button" className="absolute z-10 top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300" onClick={() => setMobileMenuOpen(false)}>
                                                 <div className="flex">
                                                     <span className="sr-only">Close menu</span>
@@ -90,7 +90,7 @@ function Sidebar() {
                         </Dialog.Panel>
                     </Dialog>
 
-            <Main />
+                    {/* <Main /> */}
 
                 </div>
 

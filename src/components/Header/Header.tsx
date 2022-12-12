@@ -15,11 +15,11 @@ function Header() {
         <>
             <div className="isolate bg-white">
                 <Gradient />
-                <div className="px-6 pt-5 pb-5 lg:px-8 fixed z-40 w-full backdrop-blur lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75">
-                    <nav className="flex h-9 items-center justify-between" aria-label="Global" >
+                <div className="px-6 pt-5 pb-5 lg:px-8 z-40 w-full bg-white lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]dark:bg-slate-900/75">
+                    <nav className="flex h-9 items-center justify-between" aria-label="Global">
                         <div className="flex lg:min-w-0 lg:flex-1 justify-center" aria-label="Global" >
                             <a className="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto" href="/">
-                                <span className="text-slate-900 dark:text-white w-auto h-5">Logo</span>
+                                <span className="text-slate-900 dark:text-white w-auto h-5">🌩</span>
                             </a>
                             <select className="text-xs leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-7 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5">
                                 <option className="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5">v3.2.4</option>
@@ -57,7 +57,7 @@ function Header() {
                     </nav>
 
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                        <Dialog.Panel className="fixed inset-0 z-20 overflow-y-auto bg-transparent backdrop-blur px-6 py-6 lg:hidden ">
+                        <Dialog.Panel className="fixed inset-0 z-20 overflow-y-auto backdrop-blur px-6 py-6 lg:hidden">
 
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
