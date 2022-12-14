@@ -3,6 +3,7 @@ import Productcard from '../../components/Cards/Productcard';
 import Productcardtwo from '../../components/Cards/Productcardtwo';
 import Testimonialcard from '../../components/Cards/Testimonialcard';
 import Profilecard from '../../components/Cards/Profilecard';
+import { NavLink } from 'react-router-dom';
 
 function Cardspage() {
     return (
@@ -15,16 +16,20 @@ function Cardspage() {
                         <p className="mt-2 max-w-4xl text-lg text-slate-700 dark:text-slate-400">Ready to use Tailwind CSS Cards Components, copy-paste HTML components code, and build your awesome website, dashboard, landing page, and more.
                         </p>
                         <nav aria-label="Breadcrumbs" className="order-first flex space-x-2 text-sm font-semibold">
-                            <a className="text-slate-500 hover:text-slate-600" href="/">Components</a>
+                            <NavLink className="text-slate-500 hover:text-slate-600" to={'/components'}>
+                                Components
+                            </NavLink>
                             <div aria-hidden="true" className="select-none text-slate-400">{'/'}</div>
-                            <a className="text-slate-500 hover:text-slate-600" href="/components/cards">Cards</a>
+                            <NavLink className="text-slate-500 hover:text-slate-600" to={'/components/cards'}>
+                                Cards
+                            </NavLink>
                         </nav>
                     </div>
 
                     <Productcard />
                     <Productcardtwo />
                     <Testimonialcard />
-                    <Profilecard/>
+                    <Profilecard />
 
                 </div>
             </div>

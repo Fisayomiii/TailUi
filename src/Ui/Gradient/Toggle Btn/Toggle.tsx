@@ -1,14 +1,13 @@
-import 'react';
 import '../Toggle Btn/Toggle.css';
 
 function Toggle() {
     
     return (
         <>
-            <label className="switch">
+            {/* <label className="switch">
                 <input type="checkbox" />
                 <span className="slider"></span>
-            </label>
+            </label> */}
         </>
     )
 }

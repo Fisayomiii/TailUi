@@ -5,9 +5,10 @@ import Gradient from "../../Ui/Gradient/Gradient";
 import Toggle from "../../Ui/Gradient/Toggle Btn/Toggle";
 
 const navigation = [
-    { name: "Templates", href: "/templates" },
-    { name: "Features", href: "/" },
+    { name: "Components", href: "/components" },
+    // { name: "Features", href: "/" },
 ];
+
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -19,7 +20,7 @@ function Header() {
                     <nav className="flex h-9 items-center justify-between" aria-label="Global">
                         <div className="flex lg:min-w-0 lg:flex-1 justify-center" aria-label="Global" >
                             <a className="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto" href="/">
-                                <span className="text-slate-900 dark:text-white w-auto h-5">🌩</span>
+                                <svg className="h-6 w-auto" aria-hidden="true" viewBox="0 0 160 24" fill="none"><path d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z" className="fill-sky-400"></path><path d="M51.285 9.531V6.857h-3.166v-3.6l-2.758.823v2.777h-2.348v2.674h2.348v6.172c0 3.343 1.686 4.526 5.924 4.011V17.22c-2.094.103-3.166.129-3.166-1.517V9.53h3.166zm12.087-2.674v1.826c-.97-1.337-2.476-2.16-4.468-2.16-3.472 0-6.357 2.931-6.357 6.763 0 3.805 2.885 6.763 6.357 6.763 1.992 0 3.498-.823 4.468-2.186v1.851h2.758V6.857h-2.758zM59.338 17.4c-2.297 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115s4.034 1.723 4.034 4.115c0 2.391-1.736 4.114-4.034 4.114zM70.723 4.929c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm5.96 0h2.757V.943h-2.758v18.771zM95.969 6.857l-2.502" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M145.532 3.429h8.511c.902 0 1.768.36 2.407 1.004.638.643.997 1.515.997 2.424v8.572c0 .909-.359 1.781-.997 2.424a3.394 3.394 0 01-2.407 1.004h-8.511a3.39 3.39 0 01-2.407-1.004 3.438 3.438 0 01-.997-2.424V6.857c0-.91.358-1.781.997-2.424a3.39 3.39 0 012.407-1.004zm-5.106 3.428c0-1.364.538-2.672 1.495-3.636a5.09 5.09 0 013.611-1.507h8.511c1.354 0 2.653.542 3.61 1.507a5.16 5.16 0 011.496 3.636v8.572a5.16 5.16 0 01-1.496 3.636 5.086 5.086 0 01-3.61 1.506h-8.511a5.09 5.09 0 01-3.611-1.506 5.164 5.164 0 01-1.495-3.636V6.857zm10.907 6.251c0 1.812-1.359 2.916-3.193 2.916-1.823 0-3.182-1.104-3.182-2.916v-5.65h1.633v5.52c0 .815.429 1.427 1.549 1.427 1.12 0 1.549-.612 1.549-1.428v-5.52h1.644v5.652zm1.72 2.748V7.457h1.644v8.4h-1.644z" fill="currentColor"></path></svg>
                             </a>
                             <select className="text-xs leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-7 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5">
                                 <option className="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5">v3.2.4</option>
@@ -48,9 +49,8 @@ function Header() {
                                         <Toggle />
                                     </span>
                                 </button>
-                                <a href="https://github.com/fisayo6969" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                                    <span className="sr-only">Creators GitHub</span>
-                                    <svg viewBox="0 0 16 16" className="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                <a href="https://github.com/Fisayomiii/TailUi" target="_blank" rel="noreferrer" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+                                    <i className='text-lg ri-github-line group-hover:scale-50 hover:cursor-pointer' ></i>
                                 </a>
                             </div>
                         </div>
@@ -85,8 +85,8 @@ function Header() {
                                                             <Toggle />
                                                         </span>
                                                     </button>
-                                                    <a href="https://github.com/tailwindlabs/tailwindcss" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                                                        <i className='bx bxl-github' ></i>
+                                                    <a href="https://github.com/Fisayomiii/TailUi" target="_blank" rel="noreferrer" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+                                                        <i className='text-lg ri-github-line group-hover:scale-50 hover:cursor-pointer' ></i>
                                                     </a>
                                                 </div>
                                             </div>

@@ -2,6 +2,7 @@ import Header from '../../components/Header/Header';
 import Basicbtns from '../../components/Buttons/Basicbtns';
 import Outlinebtns from '../../components/Buttons/Outlinebtns';
 import Shadowedbtns from '../../components/Buttons/Shadowedbtns';
+import { NavLink } from 'react-router-dom';
 
 function Buttonspage() {
   return (
@@ -13,9 +14,13 @@ function Buttonspage() {
             <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">Buttons</h1>
             <p className="mt-2 max-w-5xl text-lg text-slate-700 dark:text-slate-400">Use Tailwind’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
             <nav aria-label="Breadcrumbs" className="order-first flex space-x-2 text-sm font-semibold">
-              <a className="text-slate-500 hover:text-slate-600" href="/">Components</a>
+              <NavLink className="text-slate-500 hover:text-slate-600" to={'/components'}>
+                Components
+              </NavLink>
               <div aria-hidden="true" className="select-none text-slate-400">{'/'}</div>
-              <a className="text-slate-500 hover:text-slate-600" href="/components/buttons">Buttons</a>
+              <NavLink className="text-slate-500 hover:text-slate-600" to={'/components/buttons'}>
+                Buttons
+              </NavLink>
             </nav>
           </div>
 
