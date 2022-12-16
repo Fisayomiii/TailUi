@@ -6,6 +6,7 @@ import Alertspage from "./pages/Alert/Alertspage";
 import Cardspage from "./pages/Cards/Cardspage";
 import Notfoundpage from "./pages/404/Notfoundpage";
 import Componentspage from "./pages/Components/Componentspage";
+import Ctapage from "./pages/Cta/Ctapage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/components/breadcrumbs" element={<Breadcrumbspage />} />
         <Route path="/components/alerts" element={<Alertspage />} />
         <Route path="/components/cards" element={<Cardspage />} />
+        <Route path="/components/cta" element={<Ctapage />} />
         <Route path="/*" element={<Notfoundpage />} />
       </Routes>
     </>

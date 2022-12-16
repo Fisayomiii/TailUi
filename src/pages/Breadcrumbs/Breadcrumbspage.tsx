@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header';
-import Arrowbreadcrumbs from '../../components/Breadcrumbs/Arrowbreadcrumbs';
+import Arrowbreadcrumbs from '../../components/Templates/Breadcrumbs/Arrowbreadcrumbs';
 import { NavLink } from 'react-router-dom';
 
 function Breadcrumbspage() {

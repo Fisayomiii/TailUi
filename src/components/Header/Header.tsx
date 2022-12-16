@@ -5,6 +5,7 @@ import Gradient from "../../Ui/Gradient/Gradient";
 import Toggle from "../../Ui/Gradient/Toggle Btn/Toggle";
 
 const navigation = [
+    { name: "Home", href: "/" },
     { name: "Components", href: "/components" },
     // { name: "Features", href: "/" },
 ];
@@ -49,8 +50,8 @@ function Header() {
                                         <Toggle />
                                     </span>
                                 </button>
-                                <a href="https://github.com/Fisayomiii/TailUi" target="_blank" rel="noreferrer" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                                    <i className='text-lg ri-github-line group-hover:scale-50 hover:cursor-pointer' ></i>
+                                <a href="https://github.com/Fisayomiii/TailUi" target="_blank" rel="noreferrer" className="ml-6 text-2xl block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300" title="Github">
+                                    <i className='bx bxl-github' ></i>
                                 </a>
                             </div>
                         </div>
@@ -85,8 +86,8 @@ function Header() {
                                                             <Toggle />
                                                         </span>
                                                     </button>
-                                                    <a href="https://github.com/Fisayomiii/TailUi" target="_blank" rel="noreferrer" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                                                        <i className='text-lg ri-github-line group-hover:scale-50 hover:cursor-pointer' ></i>
+                                                    <a href="https://github.com/Fisayomiii/TailUi" target="_blank" rel="noreferrer" className="ml-6 text-2xl block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300" title="Github">
+                                                        <i className='bx bxl-github' ></i>
                                                     </a>
                                                 </div>
                                             </div>

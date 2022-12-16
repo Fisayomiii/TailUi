@@ -1,8 +1,8 @@
 import Header from '../../components/Header/Header';
-import Successalert from '../../components/Alerts/Successalert';
-import Infoalert from '../../components/Alerts/Infoalert';
-import Erroralert from '../../components/Alerts/Erroralert';
-import Notificationalert from '../../components/Alerts/Notificationalert';
+import Successalert from '../../components/Templates/Alerts/Successalert';
+import Infoalert from '../../components/Templates/Alerts/Infoalert';
+import Erroralert from '../../components/Templates/Alerts/Erroralert';
+import Notificationalert from '../../components/Templates/Alerts/Notificationalert';
 import { NavLink } from 'react-router-dom';
 
 function Alertspage() {

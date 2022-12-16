@@ -1,5 +1,5 @@
-import Gradient from '../../Ui/Gradient/Gradient';
 import { NavLink } from 'react-router-dom';
+import Gradient from '../../Ui/Gradient/Gradient';
 import Header from '../../components/Header/Header';
 
 function Componentspage() {
@@ -71,6 +71,21 @@ function Componentspage() {
                             <i className='bx bx-lock-open-alt'></i>
                         </p>
                     </div>
+
+                    <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
+                            <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
+                                <img src="https://merakiui.com/images/components/thumbnails/cta.webp" alt="" className="absolute inset-0 h-full w-full" />
+                            </div>
+                            <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
+                                <NavLink to={'/components/cta'}>
+                                    <span className="relative">CTA</span>
+                                </NavLink>
+                            </h4>
+                            <p className="relative mt-1.5 text-xs font-medium text-slate-500">4 components</p>
+                            <p className="pointer-events-none absolute top-3 right-3 z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-30 p-1 text-white h-">
+                                <i className='bx bx-lock-open-alt'></i>
+                            </p>
+                        </div>
                 </div>
 
             </div>

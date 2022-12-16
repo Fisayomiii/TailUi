@@ -1,7 +1,7 @@
 import Header from '../../components/Header/Header';
-import Basicbtns from '../../components/Buttons/Basicbtns';
-import Outlinebtns from '../../components/Buttons/Outlinebtns';
-import Shadowedbtns from '../../components/Buttons/Shadowedbtns';
+import Basicbtns from '../../components/Templates/Buttons/Basicbtns';
+import Outlinebtns from '../../components/Templates/Buttons/Outlinebtns';
+import Shadowedbtns from '../../components/Templates/Buttons/Shadowedbtns';
 import { NavLink } from 'react-router-dom';
 
 function Buttonspage() {

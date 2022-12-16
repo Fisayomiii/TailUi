@@ -1,8 +1,8 @@
 import Header from '../../components/Header/Header';
-import Productcard from '../../components/Cards/Productcard';
-import Productcardtwo from '../../components/Cards/Productcardtwo';
-import Testimonialcard from '../../components/Cards/Testimonialcard';
-import Profilecard from '../../components/Cards/Profilecard';
+import Productcard from '../../components/Templates/Cards/Productcard';
+import Productcardtwo from '../../components/Templates/Cards/Productcardtwo';
+import Testimonialcard from '../../components/Templates/Cards/Testimonialcard';
+import Profilecard from '../../components/Templates/Cards/Profilecard';
 import { NavLink } from 'react-router-dom';
 
 function Cardspage() {

@@ -1,10 +1,7 @@
-import 'react';
 import Header from '../../components/Header/Header';
 import Herocomponent from '../../components/Hero_Section/Herocomponent';
 
-type Props = {}
-
-function Hero({}: Props) {
+function Hero() {
   return (
     <>
         <Header/>
