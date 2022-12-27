@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 function Notificationalert() {
@@ -24,7 +24,7 @@ function Notificationalert() {
     return (
         <>
             <div className='pt-5'>
-                <h1 className="text-2xl pb-2 sm:text-1xl text-slate-900 tracking-tight">Error</h1>
+                <h1 className="text-2xl pb-2 sm:text-1xl text-slate-900 tracking-tight">Notification alert</h1>
                 <div className='mt-10 p-7 mt-4 overflow-hidden rounded-lg bg-white ring-1 ring-slate-900/5'>
                     <button title='Copy to Clipboard'
                         onClick={() => copyToClipboard(areaRef, "card1")}>
@@ -47,7 +47,7 @@ function Notificationalert() {
                 </div>
             </div>
 
-            <ToastContainer position="bottom-center" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover={false} theme="dark" />
+           
         </>
     )
 }

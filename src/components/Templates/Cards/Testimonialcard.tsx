@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 function Testimonialcard() {
@@ -48,7 +48,7 @@ function Testimonialcard() {
                 </div>
             </div>
 
-            <ToastContainer position="bottom-center" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover={false} theme="dark" />
+           
         </>
     )
 }

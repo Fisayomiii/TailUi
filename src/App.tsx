@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import Hero from "./pages/Hero/Hero";
 import Buttonspage from "./pages/Buttons/Buttonspage";
 import Breadcrumbspage from "./pages/Breadcrumbs/Breadcrumbspage";
@@ -7,6 +6,9 @@ import Cardspage from "./pages/Cards/Cardspage";
 import Notfoundpage from "./pages/404/Notfoundpage";
 import Componentspage from "./pages/Components/Componentspage";
 import Ctapage from "./pages/Cta/Ctapage";
+import Footer from "./components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         <Route path="/components/cta" element={<Ctapage />} />
         <Route path="/*" element={<Notfoundpage />} />
       </Routes>
+      <Footer />
+
+      <ToastContainer position="bottom-center" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover={false} theme="dark" />
     </>
   );
 }

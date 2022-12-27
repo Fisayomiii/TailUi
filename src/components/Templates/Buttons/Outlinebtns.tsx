@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 function Outlinebtns() {
@@ -20,14 +20,14 @@ function Outlinebtns() {
             });
         }
     };
-    
+
     return (
         <>
             <div className='pt-5'>
                 <h1 className="text-1xl pb-2 sm:text-1xl text-slate-900 tracking-tight">Outline button</h1>
                 <p className="mt-2 text-md text-slate-700 dark:text-slate-400">In need of a button, but not the hefty background colors they bring? Replace the default button with this outline btns, it's easy, just copy the code to the Clipboard</p>
                 <div className='mt-10 p-7 mt-4 overflow-hidden rounded-lg bg-white ring-1 ring-slate-900/5'>
-                    <button title='Copy to Clipboard' 
+                    <button title='Copy to Clipboard'
                         onClick={() => copyToClipboard(buttonareaRef, "card1")}>
                         <ClipboardIcon className="h-6 w-6 stroke-slate-500 transition-all hover:rotate-[-4deg] hover:stroke-slate-600" aria-hidden="true" />
                     </button>
@@ -41,7 +41,7 @@ function Outlinebtns() {
                 </div>
             </div>
 
-            <ToastContainer position="bottom-center" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover={false} theme="dark" />
+           
         </>
     )
 }
