@@ -9,7 +9,7 @@ import Ctapage from "./pages/Cta/Ctapage";
 import Footer from "./components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import { Route, Routes } from "react-router-dom";
-// import Faqspage from "./pages/FAQs/Faqspage";
+import Faqspage from "./pages/FAQs/Faqspage";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/components/alerts" element={<Alertspage />} />
         <Route path="/components/cards" element={<Cardspage />} />
         <Route path="/components/cta" element={<Ctapage />} />
-        {/* <Route path="/components/faqs" element={<Faqspage/>} /> */}
+        <Route path="/components/faqs" element={<Faqspage/>} />
         <Route path="/*" element={<Notfoundpage />} />
       </Routes><br /><br />
       <Footer />
