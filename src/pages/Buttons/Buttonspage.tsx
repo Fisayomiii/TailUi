@@ -3,8 +3,27 @@ import Basicbtns from '../../components/Templates/Buttons/Basicbtns';
 import Outlinebtns from '../../components/Templates/Buttons/Outlinebtns';
 import Shadowedbtns from '../../components/Templates/Buttons/Shadowedbtns';
 import { NavLink } from 'react-router-dom';
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Buttonspage() {
+  const buttonareaRef = useRef(null);
+  const [cardId, setCardId] = useState();
+
+  const copyToClipboard = async (El: any, cardId: any) => {
+    try {
+      await navigator.clipboard.writeText(El.current.outerHTML);
+      setCardId(cardId);
+      toast.success("Code Copied", {
+        icon: "✅"
+      });
+    } catch (error) {
+      toast.error("Code not Copied", {
+        icon: "❌"
+      });
+    }
+  };
   return (
     <>
       <Header />
@@ -24,9 +43,9 @@ function Buttonspage() {
             </nav>
           </div>
 
-          <Basicbtns />
-          <Outlinebtns />
-          <Shadowedbtns />
+          <Basicbtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Outlinebtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Shadowedbtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
         </div>
       </div>
     </>

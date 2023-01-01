@@ -4,8 +4,27 @@ import Productcardtwo from '../../components/Templates/Cards/Productcardtwo';
 import Testimonialcard from '../../components/Templates/Cards/Testimonialcard';
 import Profilecard from '../../components/Templates/Cards/Profilecard';
 import { NavLink } from 'react-router-dom';
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Cardspage() {
+    const buttonareaRef = useRef(null);
+    const [cardId, setCardId] = useState();
+
+    const copyToClipboard = async (El: any, cardId: any) => {
+        try {
+            await navigator.clipboard.writeText(El.current.outerHTML);
+            setCardId(cardId);
+            toast.success("Code Copied", {
+                icon: "✅"
+            });
+        } catch (error) {
+            toast.error("Code not Copied", {
+                icon: "❌"
+            });
+        }
+    };
     return (
         <>
             <Header />
@@ -26,10 +45,10 @@ function Cardspage() {
                         </nav>
                     </div>
 
-                    <Productcard />
-                    <Productcardtwo />
-                    <Testimonialcard />
-                    <Profilecard />
+                    <Productcard buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+                    <Productcardtwo buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+                    <Testimonialcard buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+                    <Profilecard buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
 
                 </div>
             </div>

@@ -1,8 +1,27 @@
 import Header from '../../components/Header/Header';
 import Arrowbreadcrumbs from '../../components/Templates/Breadcrumbs/Arrowbreadcrumbs';
 import { NavLink } from 'react-router-dom';
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Breadcrumbspage() {
+  const areaRef = useRef(null);
+    const [cardId, setCardId] = useState();
+
+    const copyToClipboard = async (El: any, cardId: any) => {
+        try {
+            await navigator.clipboard.writeText(El.current.outerHTML);
+            setCardId(cardId);
+            toast.success("Code Copied", {
+                icon: "✅"
+            });
+        } catch (error) {
+            toast.error("Code not Copied", {
+                icon: "❌"
+            });
+        }
+    };
   return (
     <>
       <Header />
@@ -22,7 +41,7 @@ function Breadcrumbspage() {
             </nav>
           </div>
 
-          <Arrowbreadcrumbs />
+          <Arrowbreadcrumbs areaRef={areaRef} copyToClipboard={copyToClipboard} />
 
         </div>
       </div>

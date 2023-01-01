@@ -1,37 +1,18 @@
-import { useRef, useState } from "react";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
-import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 
-function Profilecard() {
-    const areaRef = useRef(null);
-    const [cardId, setCardId] = useState();
-
-    const copyToClipboard = async (El: any, cardId: any) => {
-        try {
-            await navigator.clipboard.writeText(El.current.outerHTML);
-            setCardId(cardId);
-            toast.success("Code Copied", {
-                icon: "✅"
-            });
-        } catch (error) {
-            toast.error("Code not Copied", {
-                icon: "❌"
-            });
-        }
-    };
+const Profilecard = ({ buttonareaRef, copyToClipboard }: any) => {
     return (
         <>
             <div className='pt-5 '>
                 <h1 className="text-2xl pb-2 sm:text-1xl text-slate-900 tracking-tight">Profile Card</h1>
                 <div className='mt-10 p-7 mt-4 overflow-hidden rounded-lg bg-white ring-1 ring-slate-900/5'>
                     <button title='Copy to Clipboard'
-                        onClick={() => copyToClipboard(areaRef, "card1")}>
+                        onClick={() => copyToClipboard(buttonareaRef, "card1")}>
                         <ClipboardIcon className="h-6 w-6 stroke-slate-500 transition-all hover:rotate-[-4deg] hover:stroke-slate-600" aria-hidden="true" />
                     </button>
                     <div className="flex justify-center mb-5 p-12">
 
-                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" ref={areaRef}>
+                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" ref={buttonareaRef}>
                             <div className="flex justify-end px-4 pt-4">
                                 <button id="dropdownButton" data-dropdown-toggle="dropdown" className="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
                                     <span className="sr-only">Open dropdown</span>

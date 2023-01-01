@@ -1,9 +1,29 @@
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { NavLink } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Imagecta from '../../components/Templates/CTA/Imagecta';
 import Simplecta from '../../components/Templates/CTA/Simplecta';
 
 function Ctapage() {
+    const areaRef = useRef(null);
+    const [cardId, setCardId] = useState();
+
+    const copyToClipboard = async (El: any, cardId: any) => {
+        try {
+            await navigator.clipboard.writeText(El.current.outerHTML);
+            setCardId(cardId);
+            toast.success("Code Copied", {
+                icon: "✅"
+            });
+        } catch (error) {
+            toast.error("Code not Copied", {
+                icon: "❌"
+            });
+        }
+    };
+
     return (
         <>
             <Header />
@@ -24,8 +44,8 @@ function Ctapage() {
                         </nav>
                     </div>
 
-                    <Simplecta />
-                    <Imagecta />
+                    <Simplecta areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Imagecta areaRef={areaRef} copyToClipboard={copyToClipboard} />
                 </div>
             </div>
         </>

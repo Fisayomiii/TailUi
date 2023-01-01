@@ -1,26 +1,7 @@
-import { useRef, useState } from "react";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
-import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 
-function Successalert() {
-    const areaRef = useRef(null);
-    const [cardId, setCardId] = useState();
-
-    const copyToClipboard = async (El: any, cardId: any) => {
-        try {
-            await navigator.clipboard.writeText(El.current.outerHTML);
-            setCardId(cardId);
-            toast.success("Code Copied", {
-                icon: "✅"
-            });
-        } catch (error) {
-            toast.error("Code not Copied", {
-                icon: "❌"
-            });
-        }
-    };
-
+const Successalert = ({areaRef,copyToClipboard }:any) => {
+    
     return (
         <>
             <div className='pt-5'>
@@ -50,7 +31,7 @@ function Successalert() {
                 </div>
             </div>
 
-           
+
         </>
     )
 }
