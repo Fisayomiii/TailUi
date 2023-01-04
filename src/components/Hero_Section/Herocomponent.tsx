@@ -74,7 +74,7 @@ function Hero() {
                 </div> */}
 
                 <div id='templates' className='px-5 pt-12 mx-auto max-w-8xl lg:px-4 '>
-                    <h2 className="mt-12 text-2xl font-bold tracking-tight text-gray-900 lg:font-extrabold lg:text-4xl lg:leading-snug dark:text-white lg:text-center 2xl:px-48">Components</h2>
+                    <h2 className="mt-12 text-2xl font-bold tracking-tight text-gray-900 underline decoration-blue-500 lg:font-extrabold lg:text-4xl lg:leading-snug dark:text-white lg:text-center 2xl:px-48">Components</h2>
                     <div className="p-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
@@ -159,6 +159,21 @@ function Hero() {
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/faqs'}>
                                     <span className="relative">FAQ's</span>
+                                </NavLink>
+                            </h4>
+                            <p className="relative mt-1.5 text-xs font-medium text-slate-500">4 components</p>
+                            <p className="pointer-events-none absolute top-3 right-3 z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-30 p-1 text-white h-">
+                                <i className='bx bx-lock-open-alt'></i>
+                            </p>
+                        </div>
+
+                        <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
+                            <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
+                                <img src="https://merakiui.com/images/components/thumbnails/features.webp" alt="Features img" className="absolute inset-0 h-full w-full" />
+                            </div>
+                            <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
+                                <NavLink to={'/components/features'}>
+                                    <span className="relative">Features</span>
                                 </NavLink>
                             </h4>
                             <p className="relative mt-1.5 text-xs font-medium text-slate-500">4 components</p>
