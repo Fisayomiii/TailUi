@@ -19,7 +19,7 @@ function Notfoundpage() {
       </div>
       <footer className="flex justify-center items-center mt-12">
         <p>Looks like you're lost.</p>
-      </footer>
+      </footer><br /><br /><br /><br /><br /><br /><br />
     </>
   );
 }

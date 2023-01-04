@@ -37,12 +37,12 @@ function Hero() {
                                 <img
                                     className="object-cover mb-6 rounded transition-all h-48 sm:h-48 xl:h-56 w-48 sm:w-48 xl:w-56 hover:shadow-md"
                                     src="https://cdn.dribbble.com/users/5897/screenshots/1225745/ios_7_toggle.gif"
-                                    alt=""
+                                    alt="toggle.gif"
                                 />
-                                <img className="object-cover w-38 h-28 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40 hover:shadow-md" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+                                <img className="object-cover w-38 h-28 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40 hover:shadow-md" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="people" />
                             </div>
                             <div className="px-4">
-                                <img className="object-cover w-60 h-48 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80 hover:shadow-md" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="" />
+                                <img className="object-cover w-60 h-48 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80 hover:shadow-md" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="people" />
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ function Hero() {
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
-                                <img src="https://merakiui.com/images/components/thumbnails/alerts.webp" alt="" className="absolute inset-0 h-full w-full" />
+                                <img src="https://merakiui.com/images/components/thumbnails/alerts.webp" alt="Alerts img" className="absolute inset-0 h-full w-full" />
                             </div>
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/alerts'}>
@@ -94,7 +94,7 @@ function Hero() {
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
-                                <img src="https://merakiui.com/images/components/thumbnails/buttons.webp" alt="" className="absolute inset-0 h-full w-full" />
+                                <img src="https://merakiui.com/images/components/thumbnails/buttons.webp" alt="Buttons img" className="absolute inset-0 h-full w-full" />
                             </div>
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/buttons'}>
@@ -109,7 +109,7 @@ function Hero() {
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
-                                <img src="https://merakiui.com/images/components/thumbnails/breadcrumbs.webp" alt="" className="absolute inset-0 h-full w-full" />
+                                <img src="https://merakiui.com/images/components/thumbnails/breadcrumbs.webp" alt="Breadcrumbs img" className="absolute inset-0 h-full w-full" />
                             </div>
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/breadcrumbs'}>
@@ -124,7 +124,7 @@ function Hero() {
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
-                                <img src="https://merakiui.com/images/components/thumbnails/cards.webp" alt="" className="absolute inset-0 h-full w-full" />
+                                <img src="https://merakiui.com/images/components/thumbnails/cards.webp" alt="Cards img" className="absolute inset-0 h-full w-full" />
                             </div>
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/cards'}>
@@ -139,7 +139,7 @@ function Hero() {
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
-                                <img src="https://merakiui.com/images/components/thumbnails/cta.webp" alt="" className="absolute inset-0 h-full w-full" />
+                                <img src="https://merakiui.com/images/components/thumbnails/cta.webp" alt="CTA imgs" className="absolute inset-0 h-full w-full" />
                             </div>
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/cta'}>
@@ -154,7 +154,7 @@ function Hero() {
 
                         <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
-                                <img src="https://merakiui.com/images/components/thumbnails/faq.webp" alt="" className="absolute inset-0 h-full w-full" />
+                                <img src="https://merakiui.com/images/components/thumbnails/faq.webp" alt="Faq's img" className="absolute inset-0 h-full w-full" />
                             </div>
                             <h4 className="mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600">
                                 <NavLink to={'/components/faqs'}>
