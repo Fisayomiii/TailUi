@@ -6,6 +6,12 @@ import { NavLink } from 'react-router-dom';
 import { useRef, useState } from "react";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Gradientmonochrome from '../../components/Templates/Buttons/Gradient monochrome';
+import Gradientduotone from '../../components/Templates/Buttons/Gradient duotone';
+import Socialbuttons from '../../components/Templates/Buttons/Social buttons';
+import Paymentbuttons from '../../components/Templates/Buttons/Payment buttons';
+import Loaderbtns from '../../components/Templates/Buttons/Loaderbuttons';
+import Iconbutton from '../../components/Templates/Buttons/Icon buttons';
 
 function Buttonspage() {
   const buttonareaRef = useRef(null);
@@ -45,7 +51,14 @@ function Buttonspage() {
 
           <Basicbtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
           <Outlinebtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Gradientmonochrome buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Gradientduotone buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
           <Shadowedbtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Iconbutton buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Socialbuttons buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Paymentbuttons buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+          <Loaderbtns buttonareaRef={buttonareaRef} copyToClipboard={copyToClipboard} />
+
         </div>
       </div>
     </>
