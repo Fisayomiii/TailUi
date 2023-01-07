@@ -4,13 +4,14 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import Gradient from "../../Ui/Gradient/Gradient";
 import Toggle from "../../Ui/Gradient/Toggle Btn/Toggle";
 
-const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Components", href: "/components" },
-    // { name: "Features", href: "/" },
-];
+
 
 function Header() {
+    const navigation = [
+        { name: "Home", href: "/" },
+        { name: "Components", href: "/components" },
+        // { name: "Features", href: "/" },
+    ];
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
