@@ -9,14 +9,14 @@ function Componentspage() {
             alt: "Alerts img",
             linkto: "/components/alerts",
             name: "Alerts",
-            components: "4 components"
+            components: "6 components"
         },
         {
             img: "https://merakiui.com/images/components/thumbnails/buttons.webp",
             alt: "Buttons img",
             linkto: "/components/buttons",
             name: "Buttons",
-            components: "3 components"
+            components: "9 components"
         },
         {
             img: "https://merakiui.com/images/components/thumbnails/breadcrumbs.webp",

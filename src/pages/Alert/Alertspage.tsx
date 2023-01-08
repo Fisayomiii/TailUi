@@ -1,12 +1,14 @@
 import Header from '../../components/Header/Header';
-import Successalert from '../../components/Templates/Alerts/Successalert';
-import Infoalert from '../../components/Templates/Alerts/Infoalert';
-import Erroralert from '../../components/Templates/Alerts/Erroralert';
-import Notificationalert from '../../components/Templates/Alerts/Notificationalert';
+import Defaultalert from '../../components/Templates/Alerts/Default alert';
+import Alertswithicon from '../../components/Templates/Alerts/Alerts with icon';
+import Borderedalerts from '../../components/Templates/Alerts/Bordered alerts';
+import Alertswithlist from '../../components/Templates/Alerts/Alerts with list';
 import { NavLink } from 'react-router-dom';
 import { useRef, useState } from "react";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Dismissingalert from '../../components/Templates/Alerts/Dismissingalerts';
+import Additional from '../../components/Templates/Alerts/Additional';
 
 function Alertspage() {
     const areaRef = useRef(null);
@@ -25,6 +27,7 @@ function Alertspage() {
             });
         }
     };
+
     return (
         <>
             <Header />
@@ -44,10 +47,12 @@ function Alertspage() {
                         </nav>
                     </div>
 
-                    <Successalert areaRef={areaRef} copyToClipboard={copyToClipboard}  />
-                    <Infoalert areaRef={areaRef} copyToClipboard={copyToClipboard} />
-                    <Erroralert areaRef={areaRef} copyToClipboard={copyToClipboard} />
-                    <Notificationalert areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Defaultalert areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Alertswithicon areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Borderedalerts areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Alertswithlist areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Dismissingalert areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Additional areaRef={areaRef} copyToClipboard={copyToClipboard} />
                 </div>
             </div>
         </>
