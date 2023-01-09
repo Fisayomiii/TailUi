@@ -23,7 +23,7 @@ function Componentspage() {
             alt: "Breadcrumbs img",
             linkto: "/components/breadcrumbs",
             name: "Breadcrumbs",
-            components: "1 component"
+            components: "3 components"
         },
         {
             img: "https://merakiui.com/images/components/thumbnails/cards.webp",
