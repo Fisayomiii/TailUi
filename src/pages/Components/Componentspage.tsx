@@ -63,8 +63,8 @@ function Componentspage() {
                 <h2 className="mt-12 text-2xl font-bold tracking-tight text-gray-900 underline decoration-blue-500 lg:font-extrabold lg:text-4xl lg:leading-snug dark:text-white lg:text-center 2xl:px-48">Components</h2>
                 <div className="p-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
 
-                    {components.map((item) => (
-                        <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
+                    {components.map((item,i) => (
+                        <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100" key={i}>
                             <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                                 <img src={item.img} alt={item.alt} className="absolute inset-0 h-full w-full" />
                             </div>
@@ -79,9 +79,6 @@ function Componentspage() {
                             </p>
                         </div>
                     ))}
-
-
-
                 </div>
 
             </div>

@@ -44,10 +44,10 @@ function Faqspage() {
             </nav>
           </div>
 
-          <Centered areaRef={areaRef} copyToClipboard={copyToClipboard} />
-          <Cards areaRef={areaRef} copyToClipboard={copyToClipboard} />
-          <Grid areaRef={areaRef} copyToClipboard={copyToClipboard} />
-          <Collapse areaRef={areaRef} copyToClipboard={copyToClipboard} />
+          <Centered />
+          <Cards />
+          <Grid />
+          <Collapse />
 
         </div>
       </div>

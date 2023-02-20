@@ -44,8 +44,8 @@ function Ctapage() {
                         </nav>
                     </div>
 
-                    <Simplecta areaRef={areaRef} copyToClipboard={copyToClipboard} />
-                    <Imagecta areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Simplecta/>
+                    <Imagecta  />
                 </div>
             </div>
         </>

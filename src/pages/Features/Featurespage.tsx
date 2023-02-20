@@ -43,10 +43,10 @@ function Featurespage() {
                         </nav>
                     </div>
 
-                    <Simple areaRef={areaRef} copyToClipboard={copyToClipboard} />
-                    <Cards areaRef={areaRef} copyToClipboard={copyToClipboard} />
-                    <Gridlist areaRef={areaRef} copyToClipboard={copyToClipboard} />
-                    <Trustedby areaRef={areaRef} copyToClipboard={copyToClipboard} />
+                    <Simple />
+                    <Cards />
+                    <Gridlist />
+                    <Trustedby />
                 </div>
             </div>
         </>

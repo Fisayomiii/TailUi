@@ -1,6 +1,24 @@
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
 
-const Defaultalert = ({ areaRef, copyToClipboard }: any) => {
+const Defaultalert = () => {
+    const areaRef = useRef(null);
+    const [cardId, setCardId] = useState();
+
+    const copyToClipboard = async (El: any, cardId: any) => {
+        try {
+            await navigator.clipboard.writeText(El.current.outerHTML);
+            setCardId(cardId);
+            toast.success("Code Copied", {
+                icon: "✅"
+            });
+        } catch (error) {
+            toast.error("Code not Copied", {
+                icon: "❌"
+            });
+        }
+    };
 
     return (
         <>
@@ -13,8 +31,8 @@ const Defaultalert = ({ areaRef, copyToClipboard }: any) => {
                         <ClipboardIcon className="h-6 w-6 stroke-slate-500 transition-all hover:rotate-[-4deg] hover:stroke-slate-600" aria-hidden="true" />
                     </button>
                     <div className="flex justify-center">
-                        <div ref={areaRef}>
-                            <div className="p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-gray-800 dark:text-blue-400" role="alert">
+                        <div>
+                            <div className="p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-gray-800 dark:text-blue-400" role="alert" ref={areaRef}>
                                 <span className="font-medium">Info alert!</span> Change a few things up and try submitting again.
                             </div>
                             <div className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-gray-800 dark:text-red-400" role="alert">
@@ -35,7 +53,6 @@ const Defaultalert = ({ areaRef, copyToClipboard }: any) => {
 
                 </div>
             </div>
-
 
         </>
     )

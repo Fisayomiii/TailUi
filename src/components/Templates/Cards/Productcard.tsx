@@ -1,7 +1,24 @@
 import { ClipboardIcon } from "@heroicons/react/24/outline";
+import { useRef, useState } from "react";
+import { toast } from "react-toastify";
 
-const Productcard = ({ buttonareaRef, copyToClipboard }: any) => {
+const Productcard = () => {
+    const buttonareaRef = useRef(null);
+    const [cardId, setCardId] = useState();
 
+    const copyToClipboard = async (El: any, cardId: any) => {
+        try {
+            await navigator.clipboard.writeText(El.current.outerHTML);
+            setCardId(cardId);
+            toast.success("Code Copied", {
+                icon: "✅"
+            });
+        } catch (error) {
+            toast.error("Code not Copied", {
+                icon: "❌"
+            });
+        }
+    };
     return (
         <>
             <div className='pt-5 '>

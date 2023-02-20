@@ -49,9 +49,9 @@ function Breadcrumbspage() {
             </nav>
           </div>
 
-          <Defaultbreadcrumbs areaRef={areaRef} copyToClipboard={copyToClipboard} />
-          <Solidbackgroundbreadcrumbs areaRef={areaRef} copyToClipboard={copyToClipboard} />
-          <Headerbreadcrumb areaRef={areaRef} copyToClipboard={copyToClipboard} />
+          <Defaultbreadcrumbs />
+          <Solidbackgroundbreadcrumbs />
+          <Headerbreadcrumb />
 
         </div>
       </div>
