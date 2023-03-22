@@ -53,6 +53,13 @@ function Componentspage() {
             name: "Features",
             components: "4 components"
         },
+        {
+            img: "https://merakiui.com/images/components/thumbnails/forms.webp",
+            alt: "form img",
+            linkto: "/components/form",
+            name: "Form",
+            components: "3 components"
+        },
     ];
     return (
         <>

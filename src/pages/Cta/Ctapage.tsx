@@ -7,22 +7,22 @@ import Imagecta from '../../components/Templates/CTA/Imagecta';
 import Simplecta from '../../components/Templates/CTA/Simplecta';
 
 function Ctapage() {
-    const areaRef = useRef(null);
-    const [cardId, setCardId] = useState();
+    // const areaRef = useRef(null);
+    // const [cardId, setCardId] = useState();
 
-    const copyToClipboard = async (El: any, cardId: any) => {
-        try {
-            await navigator.clipboard.writeText(El.current.outerHTML);
-            setCardId(cardId);
-            toast.success("Code Copied", {
-                icon: "✅"
-            });
-        } catch (error) {
-            toast.error("Code not Copied", {
-                icon: "❌"
-            });
-        }
-    };
+    // const copyToClipboard = async (El: any, cardId: any) => {
+    //     try {
+    //         await navigator.clipboard.writeText(El.current.outerHTML);
+    //         setCardId(cardId);
+    //         toast.success("Code Copied", {
+    //             icon: "✅"
+    //         });
+    //     } catch (error) {
+    //         toast.error("Code not Copied", {
+    //             icon: "❌"
+    //         });
+    //     }
+    // };
 
     return (
         <>

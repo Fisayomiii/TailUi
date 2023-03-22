@@ -1,6 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { useRef, useState } from "react";
-import { toast } from "react-toastify";
 import Header from '../../components/Header/Header';
 import Simple from '../../components/Templates/Features/Simple';
 import Cards from '../../components/Templates/Features/Cards';
@@ -8,22 +6,22 @@ import Gridlist from '../../components/Templates/Features/Gridlist';
 import Trustedby from '../../components/Templates/Features/Trustedby';
 
 function Featurespage() {
-    const areaRef = useRef(null);
-    const [cardId, setCardId] = useState();
+    // const areaRef = useRef(null);
+    // const [cardId, setCardId] = useState();
 
-    const copyToClipboard = async (El: any, cardId: any) => {
-        try {
-            await navigator.clipboard.writeText(El.current.outerHTML);
-            setCardId(cardId);
-            toast.success("Code Copied", {
-                icon: "✅"
-            });
-        } catch (error) {
-            toast.error("Code not Copied", {
-                icon: "❌"
-            });
-        }
-    };
+    // const copyToClipboard = async (El: any, cardId: any) => {
+    //     try {
+    //         await navigator.clipboard.writeText(El.current.outerHTML);
+    //         setCardId(cardId);
+    //         toast.success("Code Copied", {
+    //             icon: "✅"
+    //         });
+    //     } catch (error) {
+    //         toast.error("Code not Copied", {
+    //             icon: "❌"
+    //         });
+    //     }
+    // };
     return (
         <>
             <Header />

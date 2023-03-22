@@ -9,22 +9,22 @@ import Grid from '../../components/Templates/Faqs/Grid';
 import Collapse from '../../components/Templates/Faqs/Collapse';
 
 function Faqspage() {
-  const areaRef = useRef(null);
-  const [cardId, setCardId] = useState();
+  // const areaRef = useRef(null);
+  // const [cardId, setCardId] = useState();
 
-  const copyToClipboard = async (El: any, cardId: any) => {
-    try {
-      await navigator.clipboard.writeText(El.current.outerHTML);
-      setCardId(cardId);
-      toast.success("Code Copied", {
-        icon: "✅"
-      });
-    } catch (error) {
-      toast.error("Code not Copied", {
-        icon: "❌"
-      });
-    }
-  };
+  // const copyToClipboard = async (El: any, cardId: any) => {
+  //   try {
+  //     await navigator.clipboard.writeText(El.current.outerHTML);
+  //     setCardId(cardId);
+  //     toast.success("Code Copied", {
+  //       icon: "✅"
+  //     });
+  //   } catch (error) {
+  //     toast.error("Code not Copied", {
+  //       icon: "❌"
+  //     });
+  //   }
+  // };
   return (
     <>
       <Header />

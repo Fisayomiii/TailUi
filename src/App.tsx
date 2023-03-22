@@ -11,6 +11,7 @@ import { ToastContainer } from "react-toastify";
 import { Route, Routes } from "react-router-dom";
 import Faqspage from "./pages/FAQs/Faqspage";
 import Featurespage from "./pages/Features/Featurespage";
+import Formspage from "./pages/Forms/Formspage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/components/cta" element={<Ctapage />} />
         <Route path="/components/faqs" element={<Faqspage />} />
         <Route path="/components/features" element={<Featurespage />} />
+        <Route path="/components/form" element={<Formspage/>} />
         <Route path="/*" element={<Notfoundpage />} />
       </Routes><br /><br />
       <Footer />
