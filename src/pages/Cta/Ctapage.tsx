@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
-import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+
 import { NavLink } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Imagecta from '../../components/Templates/CTA/Imagecta';

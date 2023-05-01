@@ -4,29 +4,11 @@ import Alertswithicon from '../../components/Templates/Alerts/Alerts with icon';
 import Borderedalerts from '../../components/Templates/Alerts/Bordered alerts';
 import Alertswithlist from '../../components/Templates/Alerts/Alerts with list';
 import { NavLink } from 'react-router-dom';
-// import { useRef, useState } from "react";
-// import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 import Dismissingalert from '../../components/Templates/Alerts/Dismissingalerts';
 import Additional from '../../components/Templates/Alerts/Additional';
 
 function Alertspage() {
-    // const areaRef = useRef(null);
-    // const [cardId, setCardId] = useState();
-
-    // const copyToClipboard = async (El: any, cardId: any) => {
-    //     try {
-    //         await navigator.clipboard.writeText(El.current.outerHTML);
-    //         setCardId(cardId);
-    //         toast.success("Code Copied", {
-    //             icon: "✅"
-    //         });
-    //     } catch (error) {
-    //         toast.error("Code not Copied", {
-    //             icon: "❌"
-    //         });
-    //     }
-    // };
+    
 
     return (
         <>

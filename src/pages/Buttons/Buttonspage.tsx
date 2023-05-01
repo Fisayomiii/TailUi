@@ -5,7 +5,7 @@ import Shadowedbtns from '../../components/Templates/Buttons/Shadowedbtns';
 import { NavLink } from 'react-router-dom';
 // import { useRef, useState } from "react";
 // import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+
 import Gradientmonochrome from '../../components/Templates/Buttons/Gradient monochrome';
 import Gradientduotone from '../../components/Templates/Buttons/Gradient duotone';
 import Socialbuttons from '../../components/Templates/Buttons/Social buttons';

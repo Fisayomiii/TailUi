@@ -1,29 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import { useRef, useState } from "react";
-import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 import Header from '../../components/Header/Header';
 import Defaultbreadcrumbs from '../../components/Templates/Breadcrumbs/Defaultbreadcrumbs';
 import Solidbackgroundbreadcrumbs from '../../components/Templates/Breadcrumbs/Solid background';
 import Headerbreadcrumb from '../../components/Templates/Breadcrumbs/Header breadcrumb';
 
 function Breadcrumbspage() {
-  // const areaRef = useRef(null);
-  // const [cardId, setCardId] = useState();
-
-  // const copyToClipboard = async (El: any, cardId: any) => {
-  //   try {
-  //     await navigator.clipboard.writeText(El.current.outerHTML);
-  //     setCardId(cardId);
-  //     toast.success("Code Copied", {
-  //       icon: "✅"
-  //     });
-  //   } catch (error) {
-  //     toast.error("Code not Copied", {
-  //       icon: "❌"
-  //     });
-  //   }
-  // };
   return (
     <>
       <Header />

@@ -1,6 +1,6 @@
 import { ClipboardIcon } from "@heroicons/react/24/outline";
 import { useRef, useState } from "react";
-import { toast } from "react-toastify";
+import toast from 'react-hot-toast';
 
 
 function Newsletterform() {
@@ -11,13 +11,9 @@ function Newsletterform() {
         try {
             await navigator.clipboard.writeText(El.current.outerHTML);
             setCardId(cardId);
-            toast.success("Code Copied", {
-                icon: "✅"
-            });
+            toast.success("Code Copied");
         } catch (error) {
-            toast.error("Code not Copied", {
-                icon: "❌"
-            });
+            toast.error("Code not Copied");
         }
     };
     return (

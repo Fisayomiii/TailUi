@@ -7,7 +7,7 @@ import Notfoundpage from "./pages/404/Notfoundpage";
 import Componentspage from "./pages/Components/Componentspage";
 import Ctapage from "./pages/Cta/Ctapage";
 import Footer from "./components/Footer/Footer";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from 'react-hot-toast';
 import { Route, Routes } from "react-router-dom";
 import Faqspage from "./pages/FAQs/Faqspage";
 import Featurespage from "./pages/Features/Featurespage";
@@ -26,12 +26,12 @@ function App() {
         <Route path="/components/cta" element={<Ctapage />} />
         <Route path="/components/faqs" element={<Faqspage />} />
         <Route path="/components/features" element={<Featurespage />} />
-        <Route path="/components/form" element={<Formspage/>} />
+        <Route path="/components/form" element={<Formspage />} />
         <Route path="/*" element={<Notfoundpage />} />
       </Routes><br /><br />
       <Footer />
 
-      <ToastContainer position="bottom-center" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover={false} theme="dark" />
+      <Toaster position="top-right" reverseOrder={false} />
     </>
   );
 }

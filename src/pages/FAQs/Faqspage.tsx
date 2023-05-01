@@ -1,30 +1,12 @@
 import Header from '../../components/Header/Header';
 import { NavLink } from 'react-router-dom';
 import { useRef, useState } from "react";
-import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 import Centered from '../../components/Templates/Faqs/Centered';
 import Cards from '../../components/Templates/Faqs/Cards';
 import Grid from '../../components/Templates/Faqs/Grid';
 import Collapse from '../../components/Templates/Faqs/Collapse';
 
 function Faqspage() {
-  // const areaRef = useRef(null);
-  // const [cardId, setCardId] = useState();
-
-  // const copyToClipboard = async (El: any, cardId: any) => {
-  //   try {
-  //     await navigator.clipboard.writeText(El.current.outerHTML);
-  //     setCardId(cardId);
-  //     toast.success("Code Copied", {
-  //       icon: "✅"
-  //     });
-  //   } catch (error) {
-  //     toast.error("Code not Copied", {
-  //       icon: "❌"
-  //     });
-  //   }
-  // };
   return (
     <>
       <Header />
